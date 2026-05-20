@@ -7,4 +7,9 @@ description: 'Fortune 1000 company Resmed. Public API documentation has not yet 
 created: '2026-05-05'
 modified: '2026-05-05'
 specificationVersion: '0.19'
+common:
+  - type: GitHubOrganization
+    url: https://github.com/ResMedOSS
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/resmed
 apis: []
