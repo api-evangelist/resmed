@@ -12,4 +12,6 @@ common:
     url: https://github.com/ResMedOSS
   - type: LinkedIn
     url: https://www.linkedin.com/company/resmed
+  - url: https://www.resmed.com/en-us/feed/
+    type: Blog
 apis: []
