@@ -1,0 +1,14 @@
+name: Resmed pricing
+generated: '2026-10-20'
+method: none
+audience: unclear
+pricing_basis: none
+published: false
+plan_count: 0
+delivery:
+  model: unclear
+note: >-
+  Resmed publishes no public API and no API or developer pricing. Partner data access
+  ("Resmed Data Exchange") is described on
+  https://www.resmed.com/en-us/health-professionals/solutions/ with no plans or prices.
+plans: []

@@ -1,0 +1,194 @@
+generated: '2026-10-20'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 16
+  own: 14
+  other_domain: 0
+  platform: 2
+  roles:
+  - api
+  - marketing
+  - other
+  - source
+  - support
+  - website
+hosts:
+- host: ap.resmed.com
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: resmed.com
+  role: other
+  relation: own
+- host: api.resmed.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: resmed.com
+  role: api
+  relation: own
+- host: careers.resmed.com
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: resmed.com
+  role: other
+  relation: own
+- host: china.resmed.com
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: resmed.com
+  role: other
+  relation: own
+- host: document.resmed.com
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: resmed.com
+  role: other
+  relation: own
+- host: eshop.resmed.com
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  platform: shopify.com
+  registrable_domain: resmed.com
+  role: other
+  relation: own
+- host: github.com
+  found_by:
+  - pointer
+  types:
+  - GitHubOrganization
+  serves: []
+  registrable_domain: github.com
+  role: source
+  relation: platform
+- host: investor.resmed.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - InvestorRelations
+  serves: []
+  registrable_domain: resmed.com
+  role: other
+  relation: own
+- host: lm.resmed.com
+  found_by:
+  - probed
+  - site-links
+  types: []
+  serves: []
+  registrable_domain: resmed.com
+  role: other
+  relation: own
+- host: me.resmed.com
+  found_by:
+  - probed
+  - site-links
+  types: []
+  serves: []
+  registrable_domain: resmed.com
+  role: other
+  relation: own
+- host: myair.resmed.com
+  found_by:
+  - probed
+  - site-links
+  types: []
+  serves: []
+  registrable_domain: resmed.com
+  role: other
+  relation: own
+- host: newsroom.resmed.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - Newsroom
+  serves: []
+  registrable_domain: resmed.com
+  role: marketing
+  relation: own
+- host: sleep.resmed.com
+  found_by:
+  - probed
+  - site-links
+  types: []
+  serves: []
+  registrable_domain: resmed.com
+  role: other
+  relation: own
+- host: support.resmed.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - Support
+  serves: []
+  registrable_domain: resmed.com
+  role: support
+  relation: own
+- host: www.linkedin.com
+  found_by:
+  - pointer
+  types:
+  - LinkedIn
+  serves: []
+  registrable_domain: linkedin.com
+  role: other
+  relation: platform
+- host: www.resmed.com
+  found_by:
+  - pointer
+  - probed
+  - docs-index
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Security
+  - GettingStarted
+  - Website
+  - Blog
+  - RSS
+  - Contact
+  - AboutUs
+  - PrivacyPolicy
+  - TermsOfService
+  serves:
+  - docs
+  - cdn
+  vendor: akamai
+  registrable_domain: resmed.com
+  role: website
+  relation: own

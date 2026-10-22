@@ -1,0 +1,68 @@
+generated: '2026-10-20'
+method: searched
+source:
+- https://www.resmed.com/en-us/privacy/
+- https://www.resmed.com/en-us/terms-of-use/
+notes: Read from Resmed's US Privacy Policy (effective date March 13, 2025) and Terms of Use. The candidate "incident_notification" lines on both pages are not breach-notification commitments (one is a CPRA purpose limit on detecting security incidents, the other obliges the user to notify Resmed), so no incident_notification signal is recorded. No subprocessor list, AI transparency, accessibility, SBOM or transparency-report language was found on these pages.
+signals:
+  data_subject_request:
+    url: https://www.resmed.com/en-us/privacy/
+    section: 9. Your privacy rights
+    note: US state-law rights to know/access, delete, correct and restrict, exercised through an online form at resmed.com/DataRequest, with identity verification and authorized-agent support. Resmed says it strives to honor requests even where no statute requires it.
+    evidence:
+    - source: https://www.resmed.com/en-us/privacy/
+      http_status: 200
+      fetched: '2026-10-20'
+      quote: Subject to certain conditions and exceptions, you may have the right to request that we delete your personal information.
+    - source: https://www.resmed.com/en-us/privacy/
+      http_status: 200
+      fetched: '2026-10-20'
+      quote: To submit a request to exercise any of your rights under this notice, please Complete an online request form at https://www.resmed.com/DataRequest .
+    - source: https://www.resmed.com/en-us/privacy/
+      http_status: 200
+      fetched: '2026-10-20'
+      quote: Because Resmed values your privacy, we strive to honor requests to exercise your privacy rights regardless of whether a particular statute obligates us to do so.
+    - source: https://www.resmed.com/en-us/privacy/
+      http_status: 200
+      fetched: '2026-10-20'
+      quote: Before responding to your request, we must first verify your identity. You must provide us with your first name, last name and email address.
+  global_privacy_control:
+    url: https://www.resmed.com/en-us/privacy/
+    section: Global Privacy Control
+    note: Resmed says it strives to honor GPC as an opt-out of sale/sharing "to the extent applicable" — a qualified, not absolute, commitment.
+    evidence:
+    - source: https://www.resmed.com/en-us/privacy/
+      http_status: 200
+      fetched: '2026-10-20'
+      quote: At Resmed, we strive to honor the GPC as a valid request to opt-out of the sale or share of your personal information to the extent applicable.
+  age_assurance:
+    url: https://www.resmed.com/en-us/privacy/
+    section: 10. Children's privacy
+    note: Services are not directed to children under 16; the mechanism is a self-declaration instruction plus deletion on discovery, not an age-verification process.
+    evidence:
+    - source: https://www.resmed.com/en-us/privacy/
+      http_status: 200
+      fetched: '2026-10-20'
+      quote: Our services are not intended for, or directed to, children, and we do not knowingly collect personal information from children under the age of 16.
+    - source: https://www.resmed.com/en-us/privacy/
+      http_status: 200
+      fetched: '2026-10-20'
+      quote: If we learn that we have received information directly from a child who is under the age of 16, we will delete such information from our systems.
+  data_retention:
+    url: https://www.resmed.com/en-us/privacy/
+    section: 6. How we retain your personal information; De-identification and Re-identification
+    note: Retention is purpose- and law-based with no fixed periods stated.
+    evidence:
+    - source: https://www.resmed.com/en-us/privacy/
+      http_status: 200
+      fetched: '2026-10-20'
+      quote: We retain your personal information for as long as needed, or permitted, based on the reason why we obtained it (consistent with applicable law).
+  data_residency:
+    url: https://www.resmed.com/en-us/privacy/
+    section: 11. Data Privacy Framework
+    note: This is a cross-border transfer mechanism (EU-US DPF, UK Extension, Swiss-US DPF) for transfers to the United States, not a choice of storage region.
+    evidence:
+    - source: https://www.resmed.com/en-us/privacy/
+      http_status: 200
+      fetched: '2026-10-20'
+      quote: Under certain circumstances, as described in Resmed’s Data Privacy Framework Policy , Resmed relies on the EU-US Data Privacy Framework (the “DPF”), the UK Extension to the DPF, and the Swiss-U.S. Data Privacy Framework for data transfers from the EU, UK and Switzerland to the United States.

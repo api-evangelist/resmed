@@ -1,0 +1,8 @@
+name: Resmed rate limits
+generated: '2026-10-20'
+method: none
+limit_count: 0
+note: >-
+  No public API documentation exists, so no rate limits are published. The partner
+  "Resmed Data Exchange" program has no public docs.
+limits: []

@@ -25,15 +25,93 @@ accessModel:
   generated: '2026-07-22'
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/resmed.png
-description: 'Fortune 1000 company Resmed. Public API documentation has not yet been catalogued in the API Evangelist network.'
+description: 'Resmed (ResMed Inc., NYSE: RMD) is a Fortune 1000 medical device and digital health company that calls itself the world leader in sleep health. It makes CPAP and bilevel devices, masks and ventilators for sleep apnea, COPD and other respiratory conditions, and runs connected-care software such as the myAir patient app and AirView for clinicians. Its site resmed.com publishes no public developer portal or API documentation; a GitHub organization (ResMedOSS) hosts its open source software.'
 created: '2026-05-05'
-modified: '2026-05-05'
+modified: '2026-10-20'
+tags:
+  - Medical Devices
+  - Healthcare
+  - Sleep Apnea
+  - Respiratory Care
+  - Digital Health
+  - Connected Care
+  - Fortune 1000
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
 specificationVersion: '0.23'
 common:
+  - type: LLMsTxt
+    url: llms/resmed-llms.txt
+  - type: WellKnown
+    url: well-known/resmed-well-known.yml
+  - type: Hosts
+    url: hosts/resmed-hosts.yml
+  - type: Vendors
+    url: vendors/resmed-vendors.yml
+  - type: Security
+    url: https://www.resmed.com/en-us/security/
+  - type: GettingStarted
+    url: https://www.resmed.com/en-us/health-professionals/solutions/resmed-resupply/onboarding/
+  - type: DomainSecurity
+    url: security/resmed-domain-security.yml
+  - type: Website
+    url: https://www.resmed.com/en-us/
   - type: GitHubOrganization
     url: https://github.com/ResMedOSS
   - type: LinkedIn
     url: https://www.linkedin.com/company/resmed
-  - url: https://www.resmed.com/en-us/feed/
-    type: Blog
+  - type: Blog
+    url: https://www.resmed.com/en-us/sleep-health/blog/
+  - type: RSS
+    url: https://www.resmed.com/en-us/feed/
+  - type: Support
+    url: https://support.resmed.com/en-us/
+  - type: Contact
+    url: https://www.resmed.com/en-us/contact-us/
+  - type: AboutUs
+    url: https://www.resmed.com/en-us/about-us/
+  - type: Newsroom
+    url: https://newsroom.resmed.com/
+  - type: InvestorRelations
+    url: https://investor.resmed.com/
+  - type: PrivacyPolicy
+    url: https://www.resmed.com/en-us/privacy/
+  - type: TermsOfService
+    url: https://www.resmed.com/en-us/terms-of-use/
 apis: []
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: 'Identity pass 2026-10-20: www.resmed.com/en-us/ (title "Resmed | The World Leader in Sleep Health") returned 200 to a browser-UA GET; every link-property pointer was found in its own navigation/footer and fetched. No developer portal, API reference, pricing, sign-up or Postman page is linked from the site, and a web search found no official public API documentation, so none were added. support.resmed.com serves a JavaScript-rendered shell (200); newsroom.resmed.com answered a Cloudflare challenge (403) to our crawler and is linked from the homepage, so it is kept as live-but-guarded. GitHub org ResMedOSS lists blog https://www.resmed.com and description "ResMed Open Source Software".'
+  evidence:
+  - url: https://www.resmed.com/en-us/
+    status: 200
+  - url: https://www.resmed.com/en-us/sleep-health/blog/
+    status: 200
+  - url: https://www.resmed.com/en-us/feed/
+    status: 200
+  - url: https://support.resmed.com/en-us/
+    status: 200
+  - url: https://www.resmed.com/en-us/contact-us/
+    status: 200
+  - url: https://www.resmed.com/en-us/about-us/
+    status: 200
+  - url: https://newsroom.resmed.com/
+    status: 403
+  - url: https://investor.resmed.com/
+    status: 200
+  - url: https://www.resmed.com/en-us/privacy/
+    status: 200
+  - url: https://www.resmed.com/en-us/terms-of-use/
+    status: 200
+  - url: https://github.com/ResMedOSS
+    status: 200
+  - url: https://www.linkedin.com/company/resmed
+    status: 200
+x-enrichment:
+  date: '2026-10-20'
+  status: enriched
+  artifacts_added: 17
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

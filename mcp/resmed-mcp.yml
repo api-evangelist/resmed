@@ -1,0 +1,20 @@
+name: Resmed MCP server
+type: MCPServer
+generated: '2026-10-20'
+method: none
+status: none
+description: >-
+  Checked 2026-10-20: Resmed publishes no MCP server (hosted or local) and no public
+  OpenAPI contract, so no candidate tool list can be derived. https://www.resmed.com/.well-known/mcp.json
+  returned 404, and a web search for a Resmed MCP server returned only generic Model Context
+  Protocol documentation.
+deployment:
+  mode: none
+  auth: unknown
+  verified: searched
+tools: []
+evidence:
+- url: https://www.resmed.com/.well-known/mcp.json
+  status: 404
+- url: https://www.resmed.com/llms.txt
+  status: 404

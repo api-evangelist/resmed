@@ -1,0 +1,23 @@
+generated: '2026-10-20'
+method: none
+source:
+- https://zapier.com/apps/resmed/integrations
+- https://n8n.io/integrations/resmed/
+- https://composio.dev/toolkits/resmed
+- https://monid.ai/tools/resmed
+checked:
+- https://zapier.com/apps/resmed/integrations
+- https://n8n.io/integrations/resmed/
+- https://www.make.com/en/integrations/resmed
+- https://www.resmed.com/en-us/health-professionals/solutions/
+- https://composio.dev/toolkits/resmed
+- https://monid.ai/tools/resmed
+summary: No integration listings or named integration partners found. Zapier and n8n have no Resmed app (404); make.com
+  answered 403 (inconclusive). The health-professionals solutions page describes "Resmed Data Exchange", which it
+  says "improves workflow efficiencies by allowing third-party healthcare application partners and HME providers
+  to connect their applications to the Resmed Air Solutions ecosystem", but names no partners in the fetched HTML.
+  Brightree, MatrixCare, CitusHealth, Somnoware and Propeller Health appear on that page as Resmed's own business
+  solutions, not as third-party integrations. There is no OpenAPI in the repo to derive contract edges from.
+marketplace_apps: []
+edges: []
+templates: []

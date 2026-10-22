@@ -1,0 +1,16 @@
+name: Resmed packages
+generated: '2026-10-20'
+method: none
+note: >-
+  No first-party SDK, client library or CLI found. Resmed publishes no public developer
+  portal or API documentation. The ResMedOSS GitHub org holds 12 repos, 10 of them forks
+  (fhir-works-on-aws-* forked from AWS, archived 2022-2023; serverless-associate-waf;
+  changed-files); the npm packages of those names are published by AWS, not Resmed.
+  npm search for "resmed" returned only community packages (myair-devices,
+  node-red-contrib-myair-devices, resmed-data-mcp) built against the undocumented myAir
+  service, none published by Resmed. PyPI "resmed" returned 404.
+checked:
+- https://api.github.com/orgs/ResMedOSS/repos?per_page=100
+- https://registry.npmjs.org/-/v1/search?text=resmed&size=20
+- https://pypi.org/pypi/resmed/json
+packages: []
